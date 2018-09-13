@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Modal} from "react-bootstrap";
+import PropTypes from 'prop-types';
+
 
 export default class View extends Component {
     constructor(props) {
@@ -48,4 +50,11 @@ export default class View extends Component {
     }
 
 
+}
+
+
+View.propTypes = {
+    items: PropTypes.array,
+    onAddItem: PropTypes.func,
+    closeModal: PropTypes.func,
 }
